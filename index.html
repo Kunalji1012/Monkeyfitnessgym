@@ -294,10 +294,22 @@
 
     <div class="contact-grid">
       <form class="card" onsubmit="event.preventDefault();alert('Thanks! We will contact you shortly.');">
-        <div class="field"><label for="name">Name</label><input id="name" placeholder="Your name"/></div>
-        <div class="field"><label for="email">Email</label><input id="email" placeholder="you@example.com" type="email"/></div>
-        <div class="field"><label for="phone">Phone</label><input id="phone" placeholder="+91 ..."/></div>
-        <div class="field"><label for="msg">Message</label><textarea id="msg" rows="5" placeholder="Tell us your goals..."></textarea></div>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" placeholder="you@example.com" type="email" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" placeholder="+91 ..." />
+        </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="5" placeholder="Tell us your goals..."></textarea>
+        </div>
         <button class="btn" type="submit">Send Message</button>
       </form>
 
@@ -305,19 +317,16 @@
         <h3 class="h">Visit Us</h3>
         <p class="lead">Monkey Fitness Studio — Uttam Nagar, Delhi</p>
         <p class="lead">Open 24/7 • Personalized workouts • Expert trainers</p>
-        <!-- Map placeholder (in-built) -->
-        <div style="border-radius: 14px; overflow: hidden; width: 900px; max-width: 100%; height: 540px;">
-  <iframe
-    width="100%"
-    height="100%"
-    style="border:0;"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.014091065278!2d77.05574331502467!3d28.621136079286646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04d86a0b4c1d%3A0x638a1cea32514435!2sMonkey%20Fitness%20Studio!5e0!3m2!1sen!2sin!4v1692022296528!5m2!1sen!2sin">
-  </iframe>
-</div>
 
+        <!-- ✅ Responsive Map Container -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.014091065278!2d77.05574331502467!3d28.621136079286646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04d86a0b4c1d%3A0x638a1cea32514435!2sMonkey%20Fitness%20Studio!5e0!3m2!1sen!2sin!4v1692022296528!5m2!1sen!2sin"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
 
         <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap">
           <a class="btn alt" href="tel:+919354317716">Call Now</a>
