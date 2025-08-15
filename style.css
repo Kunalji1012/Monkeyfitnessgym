@@ -370,3 +370,188 @@
   .old-price::after {
     content: " per month";
   } 
+
+  /* Responsive map fix */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Optional: Prevent horizontal scroll globally */
+body {
+  overflow-x: hidden;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .brand {
+    margin-bottom: 10px;
+  }
+  .brand-logo {
+    height: 30px;
+    width: 30px;
+  }
+  .brand-text {
+    font-size: 1.2rem;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Adjust spacing for smaller screens */
+  }
+  .menu a {
+    padding: 0.5rem 0.8rem; /* Adjust padding for smaller screens */
+  }
+  .hero h1 {
+    font-size: 1.8rem; /* Adjust hero title size for smaller screens */
+  }
+  .hero .sub {
+    font-size: 0.9rem; /* Adjust subtitle size for smaller screens */
+  }
+  .hero-grid {
+    grid-template-columns: 1fr; /* Stack hero content on smaller screens */
+  }
+  .hero-media {
+    width: 100%; /* Ensure hero media is responsive */
+    height: auto; /* Adjust height for responsiveness */
+  }
+  .hero-media img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .stats {
+    grid-template-columns: 1fr; /* Stack stats on smaller screens */
+  }
+  .stat {
+    margin-bottom: 16px; /* Add spacing between stacked stats */
+  }
+  .pricing {
+    grid-template-columns: 1fr; /* Stack pricing cards on smaller screens */
+  }
+  .price {
+    margin-bottom: 16px; /* Add spacing between stacked pricing cards */
+  }
+  .gallery {
+    columns: 1; /* Stack gallery images on smaller screens */
+  }
+  .gallery figure {
+    margin-bottom: 16px; /* Add spacing between stacked gallery images */
+  }
+  .testi {
+    grid-template-columns: 1fr; /* Stack testimonials on smaller screens */
+  }
+  .quote {
+    margin-bottom: 16px; /* Add spacing between stacked testimonials */
+  }
+  .contact-grid {
+    grid-template-columns: 1fr; /* Stack contact form on smaller screens */
+  }
+  .field input,
+  .field textarea {
+    width: 100%; /* Ensure input fields are responsive */
+  }
+  .map-container {
+    padding-top: 75%; /* Adjust aspect ratio for smaller screens */
+  }
+  .map-container iframe {
+    height: 100%; /* Ensure map is responsive */
+  }
+  .footer {
+    text-align: center; /* Center footer content on smaller screens */
+  }
+  .footer p {
+    margin: 10px 0; /* Adjust footer text spacing */
+  }
+  .footer a {
+    display: block; /* Stack footer links */
+    margin: 5px 0; /* Add spacing between footer links */
+  }
+  .footer .social-icons {
+    justify-content: center; /* Center social icons */
+  }
+  .footer .social-icons a {
+    margin: 0 5px; /* Adjust spacing between social icons */
+  }
+  .footer .social-icons svg {
+    width: 24px; /* Adjust icon size for smaller screens */
+    height: 24px; /* Adjust icon size for smaller screens */
+  }
+  .footer .social-icons svg:hover {
+    transform: scale(1.1); /* Add hover effect for social icons */
+  }
+  .footer .social-icons svg:active {
+    transform: scale(0.9); /* Add active effect for social icons */
+  }
+  .footer .social-icons svg path {
+    fill: var(--text); /* Ensure icon color matches text */
+  }
+  .footer .social-icons svg:hover path {
+    fill: var(--brand); /* Change icon color on hover */
+  }
+  .footer .social-icons svg:active path {
+    fill: var(--brand-2); /* Change icon color on active */
+  }
+  .footer .social-icons svg:focus {
+    outline: 2px solid var(--brand); /* Add focus outline for accessibility */
+  }
+  .footer .social-icons svg:focus path {
+    fill: var(--brand-2); /* Change icon color on focus */
+  }
+  .footer .social-icons svg:focus-visible {
+    outline: 2px solid var(--brand-2); /* Add focus-visible outline for accessibility */
+  }
+  .footer .social-icons svg:focus-visible path {
+    fill: var(--brand); /* Change icon color on focus-visible */
+  }
+  .footer .social-icons svg:focus:not(:focus-visible) {
+    outline: none; /* Remove focus outline when not focus-visible */
+  }
+  .footer .social-icons svg:focus:not(:focus-visible) path {
+    fill: var(--text); /* Reset icon color when not focus-visible */
+  }
+  .footer .social-icons svg:focus:not(:focus-visible):hover {
+    transform: scale(1.1); /* Add hover effect when not focus-visible */
+  }
+  .footer .social-icons svg:focus:not(:focus-visible):active {
+    transform: scale(0.9); /* Add active effect when not focus-visible */
+  }
+  }
+  /* Footer links */
+  .footer a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer a:hover {
+    color: var(--brand);
+  }
+  .footer a:active {
+    color: var(--brand-2);
+  }
+  .footer a:focus {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+  .footer a:focus-visible {
+    outline: 2px solid var(--brand-2);
+    outline-offset: 2px;
+  }
+  .footer a:focus:not(:focus-visible) {
+    outline: none;
+  }
