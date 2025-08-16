@@ -555,3 +555,42 @@ body {
   .footer a:focus:not(:focus-visible) {
     outline: none;
   }
+
+  /* Hides menu toggle on desktop, shows on mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #111;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    z-index: 100;
+  }
+
+  .nav-wrap {
+    position: relative;
+  }
+}
