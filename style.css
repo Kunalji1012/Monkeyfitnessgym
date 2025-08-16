@@ -595,23 +595,3 @@ body {
   }
 }
 
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.menu {
-  flex-grow: 1;          /* let menu fill the space between brand and toggle */
-  display: flex;
-  gap: 1rem;             /* spacing between links */
-  margin-left: 2rem;     /* some space from brand */
-}
-
-.menu-toggle {
-  order: 2;              /* ensures toggle stays at the end */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
