@@ -1,352 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Monkey Fitness Studio — Elevate Your Fitness Journey</title>
-<meta name="description" content="Personalized workouts, expert trainers, and a spacious, fully equipped gym in Uttam Nagar. Book a free trial today." />
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monkey Fitness Studio — Elevate Your Fitness Journey</title>
+  <meta name="description" content="Personalized workouts, expert trainers, and a spacious, fully equipped gym in Uttam Nagar. Book a free trial today." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container nav-wrap">
-  <div class="brand">
-    <img src="1.jpg" alt="Monkey Fitness Logo" class="brand-logo" />
-    <span>Monkey Fitness Studio</span>
-  </div>
-  <nav class="menu" id="menu">
-   <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Membership</a>
-      <a href="#trainers">Trainers</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-      <button class="toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
-        <svg id="icon-sun" viewBox="0 0 24 24" fill="currentColor"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zm10.48 0l1.8-1.79 1.41 1.41-1.79 1.8-1.42-1.42zM12 4V1h-0v3h0zm0 19v-3h0v3h0zM4 12H1v0h3v0zm19 0h-3v0h3v0zM6.76 19.16l-1.42 1.42-1.79-1.8 1.41-1.41 1.8 1.79zM19.16 17.24l1.42 1.42-1.8 1.79-1.41-1.41 1.79-1.8zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
-        <svg id="icon-moon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-      </button>
-  </nav>
-</div>
-  
-    <nav class="menu" id="menu">
-      
-    </nav>
-  </div>
-</header>
-
-<main id="home" class="hero">
-  <div class="container hero-grid reveal">
-    <div>
-      <h1>Elevate Your Fitness Journey Beyond the Ordinary!</h1>
-      <p class="sub">Personalized workouts, expert trainers, and a spacious, fully equipped gym. Ready to level up?</p>
-      <div class="pill-row">
-        <a class="btn" href="#pricing">View Membership Plans</a>
-        <a class="btn alt" href="#contact">Book Free Trial</a>
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrap">
+      <div class="brand">
+        <img src="1.jpg" alt="Monkey Fitness Logo" class="brand-logo" />
+        <span>Monkey Fitness Studio</span>
       </div>
-      <div class="stats">
-        <div class="stat"><b>500+</b><span>Members Transformed</span></div>
-        <div class="stat"><b>20+</b><span>Certified Trainers</span></div>
-        <div class="stat"><b>24/7</b><span>Open Hours</span></div>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+      ☰
+    </button>
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Membership</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg id="icon-sun" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zm10.48 0l1.8-1.79 1.41 1.41-1.79 1.8-1.42-1.42zM12 4V1h-0v3h0zm0 19v-3h0v3h0zM4 12H1v0h3v0zm19 0h-3v0h3v0zM6.76 19.16l-1.42 1.42-1.79-1.8 1.41-1.41 1.8 1.79zM19.16 17.24l1.42 1.42-1.8 1.79-1.41-1.41 1.79-1.8zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    <!-- “In-built media”: animated poster with SVG data and gradient overlay -->
-   <div class="hero-media" style="position: relative; width: 100%; max-width: 1200px; height: auto; aspect-ratio: 3 / 2;">
-  <img src="1.jpg" alt="Gym action" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-  
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" aria-hidden="true">
-    
-
-    <rect width="1200" height="800" fill="#0b0d10" opacity="0.5"/>
-    
-    <g opacity="0.3">
-      <circle cx="260" cy="220" r="180" fill="url(#g)"/>
-      <circle cx="900" cy="180" r="160" fill="url(#g)"/>
-      <circle cx="720" cy="600" r="220" fill="url(#g)"/>
-    </g>
-    
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif" font-size="54" fill="white" opacity="0.85">
-      Monkey Fitness Studio
-    </text>
-    
-    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle"
-      font-family="Arial, Helvetica, sans-serif" font-size="28" fill="white" opacity="0.75">
-      Stronger • Fitter • Healthier
-    </text>
-  </svg>
-</div>
-  </div>
-</main>
-
-<!-- About -->
-<section id="about" class="bg-split">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>Who We Are</h2>
-      <p>Uttam Nagar’s favourite gym — community, coaching, and consistency.</p>
-    </div>
-    <div class="grid-3">
-      <div class="card">
-        <h3 class="h">Our Mission</h3>
-        <p class="lead">To inspire healthier lifestyles by providing the tools, support, and environment you need to succeed.</p>
-      </div>
-      <div class="card">
-        <h3 class="h">What We Believe</h3>
-        <p class="lead">Fitness should be accessible, enjoyable, and sustainable—whether you’re a beginner or a pro.</p>
-      </div>
-      <div class="card">
-        <h3 class="h">Why Us</h3>
-        <p class="lead">Personalized workouts, expert trainers, and a spacious, fully equipped facility focused on results.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>What We Offer</h2>
-      <p>Comprehensive training + guidance tailored to you.</p>
-    </div>
-
-    <div class="grid-3">
-      <!-- 6 service cards with in-built images (SVG placeholders) -->
-      <div class="card">
-        <img alt="Strength Training" src="18.jpg">
-        <h3 class="h">Strength Training</h3>
-        <p class="lead">Build muscle and increase power with structured programming and progressive overload.</p>
-      </div>
-      <div class="card">
-        <img alt="Cardio Programs" src="1.jpg">
-        <h3 class="h">Cardio Programs</h3>
-        <p class="lead">Boost endurance and heart health with interval training and guided routines.</p>
-      </div>
-      <div class="card">
-        <img alt="Group Classes" src="19.jpg">
-        <h3 class="h">Group Classes</h3>
-        <p class="lead">HIIT, Yoga, Spin, Zumba—train with energy and accountability.</p>
-      </div>
-      <div class="card">
-        <img alt="Personal Training" src="11.jpg">
-        <h3 class="h">Personal Training</h3>
-        <p class="lead">1:1 coaching tailored to your goals, schedule, and experience.</p>
-      </div>
-      <div class="card">
-        <img alt="Nutrition Guidance" src="5.jpg">
-        <h3 class="h">Nutrition Guidance</h3>
-        <p class="lead">Customized diet plans to fuel performance and recovery.</p>
-      </div>
-      <div class="card">
-        <img alt="Body Transformation" src="6.jpg">
-        <h3 class="h">Body Transformation Programs</h3>
-        <p class="lead">8, 12, and 16-week intensive coaching with measurable milestones.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Pricing -->
-<section id="pricing" class="bg-red">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>Choose Your Plan</h2>
-      <p>Simple, transparent pricing—no hidden fees.</p>
-    </div>
-
-    <div class="pricing">
-      <div class="price">
-        <span class="tag">Starter</span>
-        <h3>Basic</h3>
-        <div class="cost">₹1,499<span style="font-size:.8rem">/month</span></div>
-        <ul class="ul">
-          <li>Full gym floor access</li>
-          <li>Cardio equipment</li>
-          <li>Locker access</li>
-        </ul>
-        <br>
-        <a href="#contact" class="btn">Sign Up</a>
-      </div>
-
-      <div class="price popular">
-  <span class="ribbon">LIMITED TIME</span> <!-- NEW RIBBON -->
-  <span class="tag">Most Popular</span>
-  <h3>Premium</h3>
-
-  <!-- UPDATED PRICE STYLE -->
-  <div class="cost">
-    <span class="old-price">₹2,999</span>
-    <span class="new-price">₹1,999</span>
-  </div>
-
-  <ul class="ul">
-    <li>Everything in Basic</li>
-    <li>Group classes</li>
-    <li>1 Personal Training session/month</li>
-  </ul>
-  <br>
-  <a href="#contact" class="btn">Try Premium</a>
-</div>
-
-
-      <div class="price">
-        <span class="tag">All-In</span>
-        <h3>VIP</h3>
-        <div class="cost">₹4,999<span style="font-size:.8rem">/month</span></div>
-        <ul class="ul">
-          <li>Everything in Premium</li>
-          <li>Unlimited Personal Training</li>
-          <li>Nutrition plan included</li>
-        </ul>
-        <br>
-        <a href="#contact" class="btn">Go VIP</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Trainers -->
-<section id="trainers">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>Our Fitness Experts</h2>
-      <p>Coaches who care about your results.</p>
-    </div>
-
-    <div class="grid-3">
-      <!-- 3 trainer cards with in-built images -->
-      <figure class="trainer">
-        <img alt="Rahul Sharma" src="21.jpg">
-        <figcaption>
-          <strong>Rahul Sharma</strong>
-          <div class="role">Strength &amp; Conditioning (10+ yrs)</div>
-        </figcaption>
-      </figure>
-
-      <figure class="trainer">
-        <img alt="Priya Kapoor" src="23.jpg">
-        <figcaption>
-          <strong>Priya Kapoor</strong>
-          <div class="role">Yoga Instructor &amp; Nutritionist</div>
-        </figcaption>
-      </figure>
-
-      <figure class="trainer">
-        <img alt="Vikram Singh" src="22.jpg">
-        <figcaption>
-          <strong>Vikram Singh</strong>
-          <div class="role">Functional Training &amp; HIIT Specialist</div>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery -->
-<section id="gallery" class="bg-split">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>In Action</h2>
-      <p>Inside the gym: energy, focus, results.</p>
-    </div>
-
-    <div class="gallery" id="galleryGrid">
-      <figure><img alt="Gym 1" src="10.jpg"></figure>
-      <figure><img alt="Gym 2" src="11.jpg"></figure>
-      <figure><img alt="Gym 3" src="12.jpg"></figure>
-      <figure><img alt="Gym 4" src="13.jpg"></figure>
-      <figure><img alt="Gym 5" src="14.jpg"></figure>
-      <figure><img alt="Gym 6" src="15.jpg"></figure>
-      <figure><img alt="Gym 7" src="16.jpg"></figure>
-      <figure><img alt="Gym 8" src="17.jpg"></figure>
-    </div>
-  </div>
-  <div class="lightbox" id="lightbox"><img alt="" src=""></div>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>Member Success Stories</h2>
-      <p>Real people. Real progress.</p>
-    </div>
-    <div class="testi">
-      <div class="quote">“Lost 12 kg in 6 months — this gym changed my life!” — <b>Ananya M.</b> ★★★★★</div>
-      <div class="quote">“Best trainers and amazing atmosphere.” — <b>Rohit K.</b> ★★★★★</div>
-      <div class="quote">“I’m stronger and more confident than ever.” — <b>Sanya R.</b> ★★★★★</div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="bg-split">
-  <div class="container reveal">
-    <div class="section-head">
-      <h2>Get in Touch</h2>
-      <p>Call <b>9354317716</b> to learn more or book a free trial.</p>
-    </div>
-
-    <div class="contact-grid">
-      <form class="card" onsubmit="event.preventDefault();alert('Thanks! We will contact you shortly.');">
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" placeholder="Your name" />
+  <!-- Hero Section -->
+  <main id="home" class="hero">
+    <div class="container hero-grid reveal">
+      <div>
+        <h1>Elevate Your Fitness Journey Beyond the Ordinary!</h1>
+        <p class="sub">Personalized workouts, expert trainers, and a spacious, fully equipped gym. Ready to level up?</p>
+        <div class="pill-row">
+          <a class="btn" href="#pricing">View Membership Plans</a>
+          <a class="btn alt" href="#contact">Book Free Trial</a>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" placeholder="you@example.com" type="email" />
+        <div class="stats">
+          <div class="stat"><b>500+</b><span>Members Transformed</span></div>
+          <div class="stat"><b>20+</b><span>Certified Trainers</span></div>
+          <div class="stat"><b>24/7</b><span>Open Hours</span></div>
         </div>
-        <div class="field">
-          <label for="phone">Phone</label>
-          <input id="phone" placeholder="+91 ..." />
-        </div>
-        <div class="field">
-          <label for="msg">Message</label>
-          <textarea id="msg" rows="5" placeholder="Tell us your goals..."></textarea>
-        </div>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+      </div>
 
-      <div class="card">
-        <h3 class="h">Visit Us</h3>
-        <p class="lead">Monkey Fitness Studio — Uttam Nagar, Delhi</p>
-        <p class="lead">Open 24/7 • Personalized workouts • Expert trainers</p>
+      <div class="hero-media" style="position: relative; width: 100%; max-width: 1200px; aspect-ratio: 3/2;">
+        <img src="1.jpg" alt="Gym action" style="width: 100%; height: 100%; object-fit: cover;">
+        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" aria-hidden="true">
+          <rect width="1200" height="800" fill="#0b0d10" opacity="0.5"/>
+          <g opacity="0.3">
+            <circle cx="260" cy="220" r="180" fill="url(#g)"/>
+            <circle cx="900" cy="180" r="160" fill="url(#g)"/>
+            <circle cx="720" cy="600" r="220" fill="url(#g)"/>
+          </g>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="54" fill="white" opacity="0.85">Monkey Fitness Studio</text>
+          <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="white" opacity="0.75">Stronger • Fitter • Healthier</text>
+        </svg>
+      </div>
+    </div>
+  </main>
 
-        <!-- ✅ Responsive Map Container -->
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.014091065278!2d77.05574331502467!3d28.621136079286646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04d86a0b4c1d%3A0x638a1cea32514435!2sMonkey%20Fitness%20Studio!5e0!3m2!1sen!2sin!4v1692022296528!5m2!1sen!2sin"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+  <!-- Sections -->
+  <!-- About Section -->
+  <section id="about" class="bg-split">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>Who We Are</h2>
+        <p>Uttam Nagar’s favourite gym — community, coaching, and consistency.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3 class="h">Our Mission</h3>
+          <p class="lead">To inspire healthier lifestyles by providing the tools, support, and environment you need to succeed.</p>
         </div>
-
-        <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap">
-          <a class="btn alt" href="tel:+919354317716">Call Now</a>
-          <a class="btn" href="#pricing">Join Now</a>
+        <div class="card">
+          <h3 class="h">What We Believe</h3>
+          <p class="lead">Fitness should be accessible, enjoyable, and sustainable—whether you’re a beginner or a pro.</p>
+        </div>
+        <div class="card">
+          <h3 class="h">Why Us</h3>
+          <p class="lead">Personalized workouts, expert trainers, and a spacious, fully equipped facility focused on results.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
-    <div>© 2025 Monkey Fitness Studio. All Rights Reserved.</div>
-    <div style="display:flex; gap:10px; flex-wrap:wrap">
-      <a href="#top" class="btn alt" style="padding:.4rem .8rem">Back to top ↑</a>
+  <!-- Services -->
+  <section id="services">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>What We Offer</h2>
+        <p>Comprehensive training + guidance tailored to you.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><img src="18.jpg" alt="Strength Training"><h3 class="h">Strength Training</h3><p class="lead">Build muscle and increase power with structured programming and progressive overload.</p></div>
+        <div class="card"><img src="1.jpg" alt="Cardio Programs"><h3 class="h">Cardio Programs</h3><p class="lead">Boost endurance and heart health with interval training and guided routines.</p></div>
+        <div class="card"><img src="19.jpg" alt="Group Classes"><h3 class="h">Group Classes</h3><p class="lead">HIIT, Yoga, Spin, Zumba—train with energy and accountability.</p></div>
+        <div class="card"><img src="11.jpg" alt="Personal Training"><h3 class="h">Personal Training</h3><p class="lead">1:1 coaching tailored to your goals, schedule, and experience.</p></div>
+        <div class="card"><img src="5.jpg" alt="Nutrition Guidance"><h3 class="h">Nutrition Guidance</h3><p class="lead">Customized diet plans to fuel performance and recovery.</p></div>
+        <div class="card"><img src="6.jpg" alt="Body Transformation"><h3 class="h">Body Transformation Programs</h3><p class="lead">8, 12, and 16-week intensive coaching with measurable milestones.</p></div>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Pricing -->
+  <section id="pricing" class="bg-red">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>Choose Your Plan</h2>
+        <p>Simple, transparent pricing—no hidden fees.</p>
+      </div>
+      <div class="pricing">
+        <div class="price">
+          <span class="tag">Starter</span>
+          <h3>Basic</h3>
+          <div class="cost">₹1,499<span>/month</span></div>
+          <ul class="ul">
+            <li>Full gym floor access</li>
+            <li>Cardio equipment</li>
+            <li>Locker access</li>
+          </ul>
+          <a href="#contact" class="btn">Sign Up</a>
+        </div>
+
+        <div class="price popular">
+          <span class="ribbon">LIMITED TIME</span>
+          <span class="tag">Most Popular</span>
+          <h3>Premium</h3>
+          <div class="cost"><span class="old-price">₹2,999</span> <span class="new-price">₹1,999</span></div>
+          <ul class="ul">
+            <li>Everything in Basic</li>
+            <li>Group classes</li>
+            <li>1 Personal Training session/month</li>
+          </ul>
+          <a href="#contact" class="btn">Try Premium</a>
+        </div>
+
+        <div class="price">
+          <span class="tag">All-In</span>
+          <h3>VIP</h3>
+          <div class="cost">₹4,999<span>/month</span></div>
+          <ul class="ul">
+            <li>Everything in Premium</li>
+            <li>Unlimited Personal Training</li>
+            <li>Nutrition plan included</li>
+          </ul>
+          <a href="#contact" class="btn">Go VIP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section id="trainers">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>Our Fitness Experts</h2>
+        <p>Coaches who care about your results.</p>
+      </div>
+      <div class="grid-3">
+        <figure class="trainer"><img src="21.jpg" alt="Rahul Sharma"><figcaption><strong>Rahul Sharma</strong><div class="role">Strength & Conditioning (10+ yrs)</div></figcaption></figure>
+        <figure class="trainer"><img src="23.jpg" alt="Priya Kapoor"><figcaption><strong>Priya Kapoor</strong><div class="role">Yoga Instructor & Nutritionist</div></figcaption></figure>
+        <figure class="trainer"><img src="22.jpg" alt="Vikram Singh"><figcaption><strong>Vikram Singh</strong><div class="role">Functional Training & HIIT Specialist</div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="bg-split">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>In Action</h2>
+        <p>Inside the gym: energy, focus, results.</p>
+      </div>
+      <div class="gallery" id="galleryGrid">
+        <figure><img src="10.jpg" alt="Gym 1" /></figure>
+        <figure><img src="11.jpg" alt="Gym 2" /></figure>
+        <figure><img src="12.jpg" alt="Gym 3" /></figure>
+        <figure><img src="13.jpg" alt="Gym 4" /></figure>
+        <figure><img src="14.jpg" alt="Gym 5" /></figure>
+        <figure><img src="15.jpg" alt="Gym 6" /></figure>
+        <figure><img src="16.jpg" alt="Gym 7" /></figure>
+        <figure><img src="17.jpg" alt="Gym 8" /></figure>
+      </div>
+      <div class="lightbox" id="lightbox"><img alt="" src="" /></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>Member Success Stories</h2>
+        <p>Real people. Real progress.</p>
+      </div>
+      <div class="testi">
+        <div class="quote">“Lost 12 kg in 6 months — this gym changed my life!” — <b>Ananya M.</b> ★★★★★</div>
+        <div class="quote">“Best trainers and amazing atmosphere.” — <b>Rohit K.</b> ★★★★★</div>
+        <div class="quote">“I’m stronger and more confident than ever.” — <b>Sanya R.</b> ★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-split">
+    <div class="container reveal">
+      <div class="section-head">
+        <h2>Get in Touch</h2>
+        <p>Call <b>9354317716</b> to learn more or book a free trial.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="card" onsubmit="event.preventDefault();alert('Thanks! We will contact you shortly.');">
+          <div class="field"><label for="name">Name</label><input id="name" placeholder="Your name" /></div>
+          <div class="field"><label for="email">Email</label><input id="email" placeholder="you@example.com" type="email" /></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" placeholder="+91 ..." /></div>
+          <div class="field"><label for="msg">Message</label><textarea id="msg" rows="5" placeholder="Tell us your goals..."></textarea></div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="card">
+          <h3 class="h">Visit Us</h3>
+          <p class="lead">Monkey Fitness Studio — Uttam Nagar, Delhi</p>
+          <p class="lead">Open 24/7 • Personalized workouts • Expert trainers</p>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.014091065278!2d77.05574331502467!3d28.621136079286646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04d86a0b4c1d%3A0x638a1cea32514435!2sMonkey%20Fitness%20Studio!5e0!3m2!1sen!2sin!4v1692022296528!5m2!1sen!2sin"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap">
+            <a class="btn alt" href="tel:+919354317716">Call Now</a>
+            <a class="btn" href="#pricing">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <div>© 2025 Monkey Fitness Studio. All Rights Reserved.</div>
+      <div><a href="#top" class="btn alt" style="padding:.4rem .8rem">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
